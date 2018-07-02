@@ -43,4 +43,14 @@ class DogTest < Minitest::Test
 
     assert_equal expected, actual
   end
+
+  def test_if_bark_is_woof
+    dog = Dog.new("Fido", 2, "Dalmation")
+    expected = "Woof"
+    actual = dog.bark
+
+    assert_equal expected, actual
+
+  end
+
 end
